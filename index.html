@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prince Malaviya - Personal Blog</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Prince Malaviya</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+      <h2>Welcome to My Blog</h2>
+      <p>
+        Hi! I am Prince Malaviya, a B.Tech CSE (AI & ML) student at P P Savani
+        University. This is my personal blog where I share my learning journey,
+        projects, and experiences in web development, artificial intelligence,
+        and machine learning.
+      </p>
+      <button onclick="scrollToBlog()">Read My Blog</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <h3>Student Information</h3>
+        <ul>
+          <li><strong>Name:</strong> Prince Malaviya</li>
+          <li><strong>Course:</strong> B.Tech CSE (AI & ML)</li>
+          <li><strong>University:</strong> P P Savani University</li>
+        </ul>
+
+        <h3>My Interests</h3>
+        <ul>
+          <li>Coding</li>
+          <li>Artificial Intelligence</li>
+          <li>Machine Learning</li>
+          <li>Web Development</li>
+          <li>Gaming</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+      <h2>My Blog Articles</h2>
+      <div class="blog-container">
+        <!-- Blog Card 1 -->
+        <div class="blog-card">
+          <h3>My Journey into Web Development</h3>
+          <p>
+            When I started my B.Tech course, I never thought I would be
+            interested in web development. But as I learned HTML and CSS, I
+            realized how fun it is to create websites. In this article, I will
+            share my experience of learning web development from scratch.
+          </p>
+          <button onclick="expandBlog(1)">Read More</button>
+          <div id="blog-expand-1" class="hidden-content">
+            <p>
+              Web development has been an amazing journey so far. I started with
+              basic HTML tags like div, p, and h1. Then I learned CSS to style
+              these elements with colors, fonts, and layouts. Now I am learning
+              JavaScript to make websites interactive. Every day I learn
+              something new, and it motivates me to continue this learning
+              journey.
+            </p>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="blog-card">
+          <h3>Why I Am Learning JavaScript</h3>
+          <p>
+            JavaScript is the language of the web. Every interactive website
+            uses JavaScript to handle user interactions. I am learning
+            JavaScript to build dynamic and responsive web applications. In this
+            blog, I explain why JavaScript is important for web developers.
+          </p>
+          <button onclick="expandBlog(2)">Read More</button>
+          <div id="blog-expand-2" class="hidden-content">
+            <p>
+              JavaScript allows me to handle events like button clicks, form
+              submissions, and keyboard inputs. With JavaScript, I can validate
+              forms, display messages, and manipulate the webpage content. It is
+              the foundation of modern web development. Learning JavaScript will
+              help me build better websites and eventually move towards advanced
+              frameworks.
+            </p>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="blog-card">
+          <h3>My First Experience with AI and ML</h3>
+          <p>
+            AI and ML are the future of technology. As an AI & ML student, I am
+            learning how to build machine learning models. My first experience
+            with ML was building a simple classification model. This blog
+            describes my exciting journey into the world of artificial
+            intelligence.
+          </p>
+          <button onclick="expandBlog(3)">Read More</button>
+          <div id="blog-expand-3" class="hidden-content">
+            <p>
+              In my first ML project, I learned about datasets, training models,
+              and making predictions. I used Python and popular libraries like
+              NumPy and Pandas. Building my first model was challenging but very
+              rewarding. I realized that AI and ML are not just theories but
+              practical tools that can solve real-world problems. This
+              experience has inspired me to learn more about deep learning and
+              neural networks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email" />
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Write your message here"
+        ></textarea>
+
+        <button type="button" onclick="validateForm()">Submit</button>
+      </form>
+      <div id="contact-message"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Prince Malaviya | Web Application Development</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
